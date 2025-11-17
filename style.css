@@ -1,0 +1,95 @@
+/* 基本設定 */
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto; /* 中央寄せ */
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* ヘッダー */
+header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky; /* スクロールしても上に固定 */
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* ロゴとメニューを左右に配置 */
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* ヒーローセクション */
+.hero {
+    background-color: #e0f7fa;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* セクション共通 */
+section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* Works (グリッドレイアウト) */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* レスポンシブ対応のグリッド */
+    gap: 30px;
+}
+
+.work-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: #fff;
+    transition: transform 0.3s;
+}
+
+.work-item:hover {
+    transform: translateY(-5px); /* ホバー時に少し浮く */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tech-stack {
+    font-weight: bold;
+    color: #00796b;
+    font-size: 0.9rem;
+}
+
+/* フッター */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    color: #ccc;
+}
